@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- jQuery 1.11.3 for development -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 for development -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">
+
+    <script src="js/virtual-cloud.min.js"></script>
+    <link rel="stylesheet" href="/css/virtual-cloud.min.css">
+
+</head>
+<body>
+
+    <main class="vir">
+
+        <section class="vir-banner">
+            <h1 class="vir-banner__title">Вирутальный облачный веб хостинг</h1>
+        </section>
+
+        <section class="vir-subdomain">
+            <h2 class="vir-subdomain__title">Подобрать доменное имя</h2>
+            <div class="vir-subdomain__row">
+                <div class="vir-subdomain__selection">
+                    <!-- class => vir-subdomain__selection-block--success / vir-subdomain__selection-block--error -->
+                    <div class="vir-subdomain__selection-block">
+                        <input class="vir-subdomain__selection-input jsSubdomain" type="text" placeholder="Введите имя домена для регистрации....">
+                        <button class="vir-subdomain__selection-button">Подобрать</button>
+                    </div>
+                    <div class="vir-subdomain__selection-description">
+                        <div class="vir-subdomain__selection-description-svg vir-svg-info">
+                            <div class="vir-tools-item">По умолчанию усиливает безопасность сайтов. Гайки можно затянуть еще туже встроенным сканером безопасности. Не требует технической экспертизы.</div>
+                        </div>
+                        <p class="vir-subdomain__selection-description-text">Бесплатно при покупке хостинга на срок от  <span class="vir-subdomain__selection-description-text--warning">12 мес</span></p>
+                        
+                    </div>
+                </div>
+                <div class="vir-subdomain__line hide jsLine"></div>
+                <div class="vir-subdomain__price hide jsPriceBlock">
+                    <h3 class="vir-subdomain__price-title">Цена на регистрацию доменов</h3>
+                    <div class="vir-subdomain__price-items">
+
+                        <div class="vir-subdomain__price-item vir-subdomain__price-item--head">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">Доменная зона</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">Регистрация на 1 год</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-text">Статус</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.ru</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">590 руб.</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-text">занят</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.com</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">1 150 руб.</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-text">занят</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.net</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">1 270 руб.</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-text">занят</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.org</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">1 1270 руб.</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-text">занят</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.su</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">730 руб</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-text">занят</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.host4g.ru</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">0 руб</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-text">занят</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.info domains</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">1 150 руб.</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-button">Купить</p>
+                            </div>
+                        </div>
+
+                        <div class="vir-subdomain__price-item">
+                            <div class="vir-subdomain__price-item-domen">
+                                <p class="vir-subdomain__price-item-text">rusonyx.info domains</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-price">
+                                <p class="vir-subdomain__price-item-text">1 150 руб.</p>
+                            </div>
+                            <div class="vir-subdomain__price-item-status">
+                                <p class="vir-subdomain__price-item-button">Купить</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="vir-calculator">
+            <h2 class="vir-calculator__title">Калькулятор тарифа</h2>
+            <div class="vir-calculator__row">
+                <div class="vir-calculator__block">
+                    <div class="vir-calculator__block-container">
+                        <div class="vir-calculator__block-info">
+                            <p class="vir-calculator__block-info-text vir-calculator__block-info-text--title">Объем диска:</p>
+                            <p class="vir-calculator__block-info-text">1 GB NVMe</p>
+                        </div>
+                        <div id="polzunok" class="vir-calculator__block-slider vir-slider">
+                            <div id="custom-handle" class="ui-slider-handle"></div>
+                            <span class="vir-slider__counter jsSliderCounter"></span>
+                        </div>
+                    </div>
+                    <div class="vir-calculator__block-footer"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>

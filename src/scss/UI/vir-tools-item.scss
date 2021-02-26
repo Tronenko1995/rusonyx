@@ -1,0 +1,22 @@
+.vir-tools-item {
+    display: none;
+    position: absolute;
+    padding: 24px 15px 15px 16px;
+    background: #fff;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.14);
+    z-index: 2;
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    &::before {
+        bottom: 100%;
+        content: ''; 
+        position: absolute;
+        left: 12px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+    }
+}
