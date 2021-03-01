@@ -1,0 +1,52 @@
+.vir-options {
+    width: 100%;
+    background-color: #fff;
+    padding: 127px 85px 100px 85px;
+
+    &__title {
+        font-family: 'PF Din Text Cond Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 58px;
+        color: #333333;
+    }
+    &__wrap {
+        width: 100%;
+        overflow-x: auto;
+    }
+    &__tabs {
+        margin-top: 72px;
+        width: max-content;
+        position: relative;
+        display: flex;
+        &:after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 3px;
+            top: 100%;
+            left: 0;
+            background: #F2F2F2;
+            margin-top: -3px;
+        }
+        &-item {
+            font-family: 'PF Din Text Cond Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #333333;
+            margin-right: 32px;
+            cursor: pointer;
+            user-select: none;
+            padding-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .vir-options__tabs-item.active {
+        color: #00AA9B;
+        border-bottom: 3px solid #00AA9B;
+    }
+}

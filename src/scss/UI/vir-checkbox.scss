@@ -1,0 +1,48 @@
+.vir-checkbox {
+    &__label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__input {
+        display: none;
+        &:checked + span::after {
+            content: "";
+            position: absolute;
+            background-color: #E12725;
+            border: 1px solid #E12725;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguMzMzMzYgMTIuNjQzNEwxNS45OTM0IDQuOTgyNTRMMTcuMTcyNSA2LjE2MDg4TDguMzMzMzYgMTVMMy4wMzAwMyA5LjY5NjcxTDQuMjA4MzYgOC41MTgzOEw4LjMzMzM2IDEyLjY0MzRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            min-height: 20px;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__span {
+        display: block;
+        background-color: #ECF0F1;
+        border: 1px solid #E8EAEB;
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+        min-height: 20px;
+        display: inline-block;
+        margin-right: 16px;
+        position: relative;
+        text-align: center;
+    }
+    &__text {
+        font-family: 'PF Din Text Cond Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+    }
+}
