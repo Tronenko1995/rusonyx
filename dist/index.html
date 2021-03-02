@@ -164,7 +164,7 @@
 
         </section>
 
-        <section class="vir-calculator">
+        <section id="virCalculator" class="vir-calculator">
             <form action="" class="vir-calculator__form">
                 <h2 class="vir-calculator__title">Калькулятор тарифа</h2>
                 <div class="vir-calculator__row">
@@ -209,7 +209,7 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service1" type="checkbox" name="" value="" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Plesk WordPress Toolkit</span>
                                         </label>
                                     </div>
@@ -218,8 +218,8 @@
                                             <p class="vir-calculator__block-container-item-price-text">550 руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <div class="vir-calculator__block-container-item-info-svg vir-svg-info">
-                                            </div>
+                                            <a href="#virOptions" data-tab="tab1" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -227,7 +227,7 @@
                                 <div class="vir-calculator__block-container-item vir-calculator__block-container-item--select">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service2" type="checkbox" name="" value="" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Premium Email</span>
                                         </label>
                                         <div class="vir-calculator__block-container-item-select vir-select">
@@ -249,7 +249,8 @@
                                             <p class="vir-calculator__block-container-item-price-text">6 310 руб/мес.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <div class="vir-calculator__block-container-item-info-svg vir-svg-info">
+                                            <a href="#virOptions" data-tab="tab2" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
+                                            </a>
                                             </div>
                                         </div>
                                     </div>
@@ -258,7 +259,7 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service3" type="checkbox" name="" value="" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Антивирус imunify360</span>
                                         </label>
                                     </div>
@@ -267,8 +268,8 @@
                                             <p class="vir-calculator__block-container-item-price-text">1090 руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <div class="vir-calculator__block-container-item-info-svg vir-svg-info">
-                                            </div>
+                                            <a href="#virOptions" data-tab="tab3" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +277,7 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service4" type="checkbox" name="" value="" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">SSL AlphaSSL</span>
                                         </label>
                                     </div>
@@ -285,8 +286,8 @@
                                             <p class="vir-calculator__block-container-item-price-text">2 300 руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <div class="vir-calculator__block-container-item-info-svg vir-svg-info">
-                                            </div>
+                                            <a href="#virOptions" data-tab="tab4" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -294,7 +295,7 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service5" type="checkbox" name="" value="" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Оптимизация под CMS Битрикс</span>
                                         </label>
                                     </div>
@@ -303,17 +304,20 @@
                                             <p class="vir-calculator__block-container-item-price-text">260 руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <div class="vir-calculator__block-container-item-info-svg vir-svg-info">
+                                            <a href="#virOptions" data-tab="tab5" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
+                                            </a>
                                             </div>
                                         </div>
+
                                     </div>
+
                                 </div>
-    
+                                <div class="vir-calculator__block-footer">
+                                    <p class="vir-calculator__block-footer-text">При заказе опций вместе с хостингом вы получаете <span class="vir-calculator__block-footer-text--discount">скидку 20%</span> (цены указаны с учётом скидки).</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="vir-calculator__block-footer">
-                            <p class="vir-calculator__block-footer-text">При заказе опций вместе с хостингом вы получаете <span class="vir-calculator__block-footer-text--discount">скидку 20%</span> (цены указаны с учётом скидки).</p>
-                        </div>
+
                     </div>
                 </div>
                 <div class="vir-calculator__total">
@@ -344,18 +348,668 @@
 
         </section>
 
-        <section class="vir-options">
+        <section id="virOptions" class="vir-options">
             <h2 class="vir-options__title">Опции</h2>
             <div class="vir-options__wrap">
-                <div class="vir-options__tabs">
-                    <a href=#a" class="jsTabs vir-options__tabs-item active">Plesk WordPress Toolkit</a>
-                    <a href="#b" class="jsTabs vir-options__tabs-item">Premium Email </a>
-                    <a href="#c" class="jsTabs vir-options__tabs-item">Антивирус imunify360</a>
-                    <a href="#d" class="jsTabs vir-options__tabs-item">SSL AlphaSSL</a>
-                    <a href="#e" class="jsTabs vir-options__tabs-item">Оптимизация под CMS Битрикс</a>
+                <ul class="vir-options__tabs">
+                    <li data-tab="tab1" class="jsTab vir-options__tabs-item active">Plesk WordPress Toolkit</li>
+                    <li data-tab="tab2" class="jsTab vir-options__tabs-item">Premium Email </li>
+                    <li data-tab="tab3" class="jsTab vir-options__tabs-item">Антивирус imunify360</li>
+                    <li data-tab="tab4" class="jsTab vir-options__tabs-item">SSL AlphaSSL</li>
+                    <li data-tab="tab5" class="jsTab vir-options__tabs-item">Оптимизация под CMS Битрикс</li>
+                </ul>
+            </div>
+            <div class="vir-options__containers">
+                <div class="vir-options__container jsTabConainer" id="tab1">
+                    <div class="vir-options__container-main">
+                        <div class="vir-options__container-main-left">
+                            <img src="img/plesk_wp.gif" alt="" width="280" height="480" class="vir-options__container-main-img">
+                        </div>
+                        <div class="vir-options__container-main-right">
+                            <div class="vir-options__container-main-right-head">
+                                <h3 class="vir-options__container-main-title">Plesk WordPress Toolkit</h3>
+                                <a data-service="service1" href="#virCalculator" class="vir-options__container-main-button jsAddToOrder">Добавить в заказ</a>
+                            </div>
+                            <div class="vir-options__container-main-info">
+                                <p class="vir-options__container-main-text">Единственный набор инструментов, который вам когда-либо понадобится.</p>
+                                <p class="vir-options__container-main-text">Самый полный, безопасный и универсальный набор инструментов для WordPress.</p>
+                            </div>
+                            <div class="vir-options__container-main-list">
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">WordPress – просто</h4>
+                                    <p class="vir-options__container-main-item-text">В один щелчок мыши вы можете установить, инициализировать и настроить WordPress от начала до конца. Единая панель для массового управления многими инсталляциями WordPress.</p>
+                                </div>
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">Противостоит атакам</h4>
+                                    <p class="vir-options__container-main-item-text">По умолчанию усиливает безопасность сайтов. Гайки можно затянуть еще туже встроенным сканером безопасности. Не требует технической экспертизы.</p>
+                                </div>
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">Упрощает</h4>
+                                    <p class="vir-options__container-main-item-text">Копирование, тестовые сайты, обновления, миграции, и другие сложные задачи делают по одному щелчку мыши. Разработчики могут расслабиться и исключить риски, связанные с инфраструктурными задачами.</p>
+                                </div>
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">Тестирование и копирование</h4>
+                                    <p class="vir-options__container-main-item-text">Проверяйте новые идеи и функции на тестовом сайте, перед тем, как выложить их на основной. Не требует плагинов или отдельного сервера.</p>
+                                </div>
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">Автоматизирует</h4>
+                                    <p class="vir-options__container-main-item-text">Массово или по одному накатывайте обновления для ядра WordPress, тем и плагинов. Наблюдайте и настраивайте все ваши сайты из единой панели управления.</p>
+                                </div>
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">Просто, но профессионально</h4>
+                                    <p class="vir-options__container-main-item-text">Получите полный контроль с WP-CLI, режимом «на обслуживании», управлением режима отладки, переключением индексирования поисковиками.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vir-options__container-stand">
+                        <div class="vir-options__container-stand-item">
+                            <img class="vir-options__container-stand-item-img" alt="" width="550" height="338" src="img/plesk_wp-1.jpg">
+                            <p class="vir-options__container-stand-item-title">Создавайте</p>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Тестовая среда</p>
+                                <p class="vir-options__container-stand-item-info-text">WordPress Toolkit помогает клонировать сайт и превратить клон в тестовую среду, на которой можно безопасно экспериментировать и проверять новые идеи. Когда тесты завершены, изменения легко перенести на основной сайт.</p>
+                            </div>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Управление темами и плагинами</p>
+                                <p class="vir-options__container-stand-item-info-text">Быстрый поиск и удобная установка тем и плагинов для одного или сразу нескольких сайтов. Можно включать и выключать плагины, не заходя в админку каждого сайта. Массовое удаление тем и плагинов, которые больше не нужны или небезопасны. Настраиваемые комбинации («set») тем и плагинов для быстрой установки </p>
+                            </div>
+                        </div>
+                        <div class="vir-options__container-stand-item">
+                            <img class="vir-options__container-stand-item-img" alt="" width="550" height="338" src="img/plesk_wp-2.jpg">
+                            <p class="vir-options__container-stand-item-title">Защищайте</p>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Усиление в один клик</p>
+                                <p class="vir-options__container-stand-item-info-text">Сканируйте все сайты на WordPress на вашем сервере с Plesk для обнаружения и устранения проблем с безопасностью. Никакого ручного труда, просто выберите сайты, которые нужно усилить и нажмите «Защитить»/«Secure».</p>
+                            </div>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Не требует экспертизы в безопасности</p>
+                                <p class="vir-options__container-stand-item-info-text">Сканер уязвимостей WordPress Toolkit не просто применяет шаблонные решения, а следует последним рекомендациям и внедряет улучшения, рекомендованные WP Codex и экспертами в области безопасности WordPress.</p>
+                            </div>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Smart Updates</p>
+                                <p class="vir-options__container-stand-item-info-text">Технология Smart Updates анализирует изменения, вносимые каждым обновлением, и делает оценку риска поломки сайта после их применения. В автоматическом режиме устанавливает только те обновления, которые в результате анализа признаны безопасными и не сломают сайт</p>
+                            </div>
+                        </div>
+                        <div class="vir-options__container-stand-item">
+                            <img class="vir-options__container-stand-item-img" alt="" width="550" height="338" src="img/plesk_wp-3.jpg">
+                            <p class="vir-options__container-stand-item-title">Запускайте</p>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Точки восстановления</p>
+                                <p class="vir-options__container-stand-item-info-text">Если что-то пойдет не по плану, всегда можно откатить изменения к последней точки восстановления или восстановить из резервной копии</p>
+                            </div>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Управление режимом отладки</p>
+                                <p class="vir-options__container-stand-item-info-text">Управляйте всеми важными настройками отладки из админки WordPress, или из панели WordPress Toolkit для каждого сайта индивидуально.</p>
+                            </div>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Управление индексированием</p>
+                                <p class="vir-options__container-stand-item-info-text">Включайте или выключайте индексирование сайта из панели WordPress Toolkit</p>
+                            </div>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Режим «на обслуживании»</p>
+                                <p class="vir-options__container-stand-item-info-text">Включайте его легким движением руки, когда сайт может не отвечать на запросы, например, когда устанавливаются обновления или новые плагины.</p>
+                            </div>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-title">Инструменты командной строки</p>
+                                <p class="vir-options__container-stand-item-info-text">Легкий доступ к командной строке для управления вашими сайтами. Импорт баз данных, создание пользователей, обновления тем и плагинов – только часть того, то можно делать с WP-CLI.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vir-options__container-compare">
+                        <p class="vir-options__container-compare-title">Сравнение бесплатной и платной версии</p>
+                        <table class="vir-options__container-compare-table vir-table" cellspacing="0" cellpadding="0">
+                            <thead class="vir-table__head">
+                                <tr class="vir-table__head-row">
+                                    <th class="vir-table__head-cell">&nbsp;</th>
+                                    <th class="vir-table__head-cell">
+                                        <p class="vir-table__head-cell-title">Включено в:</p>
+                                        <p class="vir-table__head-cell-text">Plesk Web Admin Edition</p>
+                                    </th>
+                                    <th class="vir-table__head-cell" width="339">
+                                        <p class="vir-table__head-cell-title">Включено в:</p>
+                                        <p class="vir-table__head-cell-text">Plesk Web Pro Edition & Plesk Web Host Edition</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="vir-table__body">
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Инсталляция новых сайтов WordPress</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Ручное добавление сайтов ранее установленных сайтов WordPress</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Миграция удаленных сайтов WordPress</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Клонирование сайтов WordPress</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Создание тестовой среды</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Синхронизация данных между сайтами WordPress</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Проверка безопасности</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Только отчет</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Полная</p>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Усиление в один клик</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Только сайты, установленные WordPress Toolkit</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Все сайты WordPress</p>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Массовое управление сайтами WordPress</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Управлением темами и плагинами</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Обновление WordPress, тем и плагинов</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Только вручную</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Автоматические</p>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Управление режимом «на обслуживании»</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Управление режимом отладки</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Защита паролем</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Управление индексацией</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <div class="vir-options__container-compare-button">
+                            <a data-service="service1" href="#virCalculator" class="vir-options__container-compare-link jsAddToOrder">Добавить в заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vir-options__container jsTabConainer vir-options__container--2 hide" id="tab2">
+                    <div class="vir-options__container-main">
+                        <div class="vir-options__container-main-left">
+                            <img src="img/plesk_wp_2.png" alt="" width="365" height="209" class="vir-options__container-main-img">
+                        </div>
+                        <div class="vir-options__container-main-right">
+                            <div class="vir-options__container-main-right-head">
+                                <h3 class="vir-options__container-main-title">Plesk Premium Email</h3>
+                                <a data-service="service2" href="#virCalculator" class="vir-options__container-main-button jsAddToOrder">Добавить в заказ</a>
+                            </div>
+                            <div class="vir-options__container-main-row">
+                                <div class="vir-options__container-main-block">
+                                    <ul class="vir-options__container-main-block-list">
+                                        <li class="vir-options__container-main-block-item">С легкостью отправляйте и получайте электронные письма, используя Plesk Premium Email.</li>
+                                        <li class="vir-options__container-main-block-item">Наслаждайтесь отзывчивым интерфейсом, доступным как для персональных компьютеров, так и для мобильных устройств.</li>
+                                        <li class="vir-options__container-main-block-item">Управляйте электронной почтой, календарями, контактами, файлами, заметками и задачами.</li>
+                                    </ul>
+                                </div>
+                                <div class="vir-options__container-main-block">
+                                    <ul class="vir-options__container-main-block-list">
+                                        <li class="vir-options__container-main-block-item">С легкостью отправляйте и получайте электронные письма, используя Plesk Premium Email.</li>
+                                        <li class="vir-options__container-main-block-item">Наслаждайтесь отзывчивым интерфейсом, доступным как для персональных компьютеров, так и для мобильных устройств.</li>
+                                        <li class="vir-options__container-main-block-item">Управляйте электронной почтой, календарями, контактами, файлами, заметками и задачами.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="vir-options__container-main-premium">
+                                <div class="vir-options__container-main-premium-item">
+                                    <svg class="vir-options__container-main-premium-item-svg vir-svg-prem-1"></svg>
+                                    <p class="vir-options__container-main-premium-item-text">Ваш сервер</p>
+                                </div>
+                                <div class="vir-options__container-main-premium-item">
+                                    <svg class="vir-options__container-main-premium-item-svg vir-svg-prem-2"></svg>
+                                    <p class="vir-options__container-main-premium-item-text">Open Source</p>
+                                </div>
+                                <div class="vir-options__container-main-premium-item">
+                                    <svg class="vir-options__container-main-premium-item-svg vir-svg-prem-3"></svg>
+                                    <p class="vir-options__container-main-premium-item-text">На сервере или в облаке</p>
+                                </div>
+                                <div class="vir-options__container-main-premium-item">
+                                    <svg class="vir-options__container-main-premium-item-svg vir-svg-prem-4"></svg>
+                                    <p class="vir-options__container-main-premium-item-text">Никаких третьих лиц</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vir-options__container-stand">
+                        <div class="vir-options__container-stand-item">
+                            <p class="vir-options__container-stand-item-title">Безопасность.</p>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-text">Вы знали, что в 2019м году было заявлено 7098 инцидентов с незаконным доступом к данным? 2019й побил антирекорд по подобным правонарушениям. Храня данные на собственных мощностях, вы можете контролировать их безопасность. Plesk Premium Email разработанный Kolab это:</p>
+                                <ul class="vir-options__container-stand-item-info-list">
+                                    <li class="vir-options__container-stand-item-info-item"><span class="vir-options__container-stand-item-info-item--bold">Автономность.</span> Система разработана с учетом всех требований безопасности</li>
+                                    <li class="vir-options__container-stand-item-info-item"><span class="vir-options__container-stand-item-info-item--bold">Отсутствие внешних связей.</span> Контролируйте ваши данные</li>
+                                    <li class="vir-options__container-stand-item-info-item"><span class="vir-options__container-stand-item-info-item--bold">Открытый исходный код и бесплатная версия.</span> Поддержка всех основных стандартов и протоколов хранения и коммуникации.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vir-options__container-stand-item">
+                            <p class="vir-options__container-stand-item-title">Безопасное взаимодействие для команд с повышенными требованиями к защите данных</p>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-text">Сканируйте все сайты на WordPress на вашем сервере с Plesk для обнаружения и устранения проблем с безопасностью. Никакого ручного труда, просто выберите сайты, которые нужно усилить и нажмите «Защитить»/«Secure».</p>
+                                <ul class="vir-options__container-stand-item-info-list">
+                                    <li class="vir-options__container-stand-item-info-item">Premium email позволяет расширять рабочую среду <span class="vir-options__container-stand-item-info-item--bold">инструментами для специфических задач</span>, покрывая все возможные нужды общения</li>
+                                    <li class="vir-options__container-stand-item-info-item">Команда <span class="vir-options__container-stand-item-info-item--bold">любого размера</span> может взаимодействовать, работая <span class="vir-options__container-stand-item-info-item--bold">удаленно</span></li>
+                                    <li class="vir-options__container-stand-item-info-item">Все что нужно для<span class="vir-options__container-stand-item-info-item--bold"> общения, коммуникации и взаимодействия</span> может быть добавлено с помощью расширений</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="vir-options__container-stand-item">
+                            <p class="vir-options__container-stand-item-title">Простота</p>
+                            <div class="vir-options__container-stand-item-info">
+                                <p class="vir-options__container-stand-item-info-text">Система создана как защищенный центр для командной работы. На собственном сервере или в облаке, в едином интерфейсе собраны все инструменты для группового взаимодействия. С Premium email можно без усилий</p>
+                                <ul class="vir-options__container-stand-item-info-list">
+                                    <li class="vir-options__container-stand-item-info-item">Назначать и управлять встречами</li>
+                                    <li class="vir-options__container-stand-item-info-item">Быстро создавать и делиться контактами</li>
+                                    <li class="vir-options__container-stand-item-info-item">Назначать, отслеживать и контролировать задачи в списках</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="vir-options__container-compare">
+                        <p class="vir-options__container-compare-title">Сравнение бесплатной и платной версии</p>
+                        <p class="vir-options__container-compare-text">Все опции доступны с предоставляемого браузерного клиента и могут быть использованы на локальных клиентах, включая мобильные приложения для почты.</p>
+                        <table class="vir-options__container-compare-table vir-table" cellspacing="0" cellpadding="0">
+                            <thead class="vir-table__head">
+                                <tr class="vir-table__head-row">
+                                    <th class="vir-table__head-cell">&nbsp;</th>
+                                    <th class="vir-table__head-cell">
+                                        <p class="vir-table__head-cell-title">Включено в:</p>
+                                        <p class="vir-table__head-cell-text">Plesk Web Admin Edition</p>
+                                    </th>
+                                    <th class="vir-table__head-cell" width="339">
+                                        <p class="vir-table__head-cell-title">Включено в:</p>
+                                        <p class="vir-table__head-cell-text">Plesk Web Pro Edition & Plesk Web Host Edition</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="vir-table__body">
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">E-mail (доступ по IMAP/POP3/SMTP)</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Автонастройка для десктопного и мобильного клиента</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Браузерный клиент (веб-мейл)</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Простое переключение на платную версию</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">ActiveSync</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Автоматический ответ («не в офисе»)</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Оповещения на рабочем столе</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Календари и списки задач</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Контакты</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Папки общего доступа</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Облачное файловое хранилище (WebDAV)</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Управление режимом «на обслуживании»</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Интеграция с Collabora Online, Seafile, Mattermost</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Интеграция с SpamAssassin</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                                <tr class="vir-table__body-row">
+                                    <td class="vir-table__body-cell">
+                                        <p class="vir-table__body-cell-text">Управление индексацией</p>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-cross"></div>
+                                    </td>
+                                    <td class="vir-table__body-cell">
+                                        <div class="vir-table__body-cell-svg vir-svg-mark"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <div class="vir-options__container-compare-button">
+                            <a data-service="service2" href="#virCalculator" class="vir-options__container-compare-link jsAddToOrder">Добавить в заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vir-options__container jsTabConainer vir-options__container--3 hide" id="tab3">
+                    <div class="vir-options__container-main">
+                        <div class="vir-options__container-main-left">
+                            <img src="img/plesk_wp_3.png" alt="" width="365" height="209" class="vir-options__container-main-img">
+                        </div>
+                        <div class="vir-options__container-main-right">
+                            <div class="vir-options__container-main-right-head">
+                                <h3 class="vir-options__container-main-title">Антивирус imunify360</h3>
+                                <a data-service="service3" href="#virCalculator" class="vir-options__container-main-button jsAddToOrder">Добавить в заказ</a>
+                            </div>
+                            <div class="vir-options__container-main-info">
+                                <p class="vir-options__container-main-text">Единственный набор инструментов, который вам когда-либо понадобится.</p>
+                                <p class="vir-options__container-main-text">Самый полный, безопасный и универсальный набор инструментов для WordPress.</p>
+                            </div>
+                            <div class="vir-options__container-main-list">
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">Imunify360 это многослойная платформа полной круговой обороны для веб-сервера:</h4>
+                                    <ul class="vir-options__container-main-item-ul">
+                                        <li class="vir-options__container-main-item-li">Продвинутые брандмауэр и WAF, обучаемые ИИ</li>
+                                        <li class="vir-options__container-main-item-li">Системы обнаружения и блокировки вторжений</li>
+                                        <li class="vir-options__container-main-item-li">Автоматический антивирус, сканирующий и очищающий систему</li>
+                                        <li class="vir-options__container-main-item-li">Обнаружение и блокировка вредоносных PHP скриптов (компонент «Проактивная защита»)</li>
+                                        <li class="vir-options__container-main-item-li">Обновления ядра без перезагрузки сервера (компонент “KernelCare”)</li>
+                                        <li class="vir-options__container-main-item-li">Интеграция в панель управления хостингом</li>
+                                    </ul>
+                                </div>
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">Imunify360 противостоит самым продвинутым и изощренным атакам:</h4>
+                                    <ul class="vir-options__container-main-item-ul">
+                                        <li class="vir-options__container-main-item-li">Brute-force (автоматизированный подбор паролей) на сетевом и HTTP уровнях</li>
+                                        <li class="vir-options__container-main-item-li">Эксплуатации уязвимостей, включая еще не анонсированные</li>
+                                        <li class="vir-options__container-main-item-li">Атакам типа «Отказ в обслуживании»</li>
+                                        <li class="vir-options__container-main-item-li">Сканированию портов</li>
+                                        <li class="vir-options__container-main-item-li">и многим другим</li>
+                                    </ul>
+                                </div>
+                                <div class="vir-options__container-main-item">
+                                    <h4 class="vir-options__container-main-item-title">С Imunify360 защитить сайты легко:</h4>
+                                    <ul class="vir-options__container-main-item-ul">
+                                        <li class="vir-options__container-main-item-li">Он полностью автоматизирован, что исключает человеческий фактор</li>
+                                        <li class="vir-options__container-main-item-li">«Стадная защита» на алгоритмах ИИ собирает и пользуется информацией с других инсталляций для выстраивания максимальной защиты от «общего врага»</li>
+                                        <li class="vir-options__container-main-item-li">Интегрированная консоль безопасности, встроенная в вашу панель хостинга</li>
+                                        <li class="vir-options__container-main-item-li">Удобные и надежные утилиты командной строки для автоматизации</li>
+                                        <li class="vir-options__container-main-item-li">24х7х265 техническая поддержка мирового уровня</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vir-options__container jsTabConainer vir-options__container--4 hide" id="tab4">
+                    <div class="vir-options__container-main">
+                        <div class="vir-options__container-main-left">
+                            <img src="img/plesk_wp_4.png" alt="" width="365" height="209" class="vir-options__container-main-img">
+                        </div>
+                        <div class="vir-options__container-main-right">
+                            <div class="vir-options__container-main-right-head">
+                                <h3 class="vir-options__container-main-title">SSL AlphaSSL</h3>
+                                <a data-service="service4" href="#virCalculator" class="vir-options__container-main-button jsAddToOrder">Добавить в заказ</a>
+                            </div>
+                            <div class="vir-options__container-main-info">
+                                <p class="vir-options__container-main-text">К проекту вы получите бесплатный возобновляемый каждые 3 месяца сертификат Let’s Encrypt.</p>
+                                <p class="vir-options__container-main-text">Но хотим обратить ваше внимание, что все пользователи с операционной системой Android 7.1.1 и более старых версий (34% всей аудитории) не смогут открывать защищённые Let's Encrypt сайты.</p>
+                                <p class="vir-options__container-main-text">Если у вас интернет-магазин или сайт на котором вы хотите видеть больше посетителей, то рекомендуем вам использовать Alpha SSL!</p>
+                                <p class="vir-options__container-main-text">Это инвестиция в SEO: просто покупая данный сертификат вы сразу поучаете дополнительно 34% аудитории.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vir-options__container jsTabConainer vir-options__container--5 hide" id="tab5">
+                    <div class="vir-options__container-main">
+                        <div class="vir-options__container-main-left">
+                            <img src="" alt="" width="365" height="209" class="vir-options__container-main-img">
+                        </div>
+                        <div class="vir-options__container-main-right">
+                            <div class="vir-options__container-main-right-head">
+                                <h3 class="vir-options__container-main-title">Оптимизация под CMS Битрикс</h3>
+                                <a data-service="service5" href="#virCalculator" class="vir-options__container-main-button jsAddToOrder">Добавить в заказ</a>
+                            </div>
+                            <div class="vir-options__container-main-info">
+                                <p class="vir-options__container-main-text">Оптимизация под Bitrix конструктивно требует больше ресурсов чем под большинство других CMS:</p>
+                                <p class="vir-options__container-main-text">Мы гарантируем совместимые с требованиями Bitrix настройки и мощности, которые показывают высокую производительность и правильную работу данной CMS.</p>
+                                <p class="vir-options__container-main-text">Обычные CMS которые хорошо работают на универсальной или специфичной кастомизации, но не очень хорошо работают с битриксовой.</p>
+                                <p class="vir-options__container-main-text"><span class="vir-options__container-main-text--bold">Наше решение во многом уникальное:</span> под Plesk не существует решений для Битрикс, которые бы конкурировали с BitrixENV, выбирая данную опцию вам достаточно просто развернуть сайт.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            
         </section>
 
     </main>

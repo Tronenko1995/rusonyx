@@ -66,4 +66,41 @@ $(document).ready(function() {
         $(this).closest('.vir-select').find('.vir-select__input').val($(this).text());
         $('.vir-select').removeClass('open');
     });
+
+    //табы
+    $('.jsTab').on('click', function() {
+        if (!$(this).hasClass('active')) {
+            const tab = $(this).data('tab');
+            $('.jsTabConainer').addClass('hide');
+            $(`#${tab}`).removeClass('hide');
+
+            $('.jsTab').removeClass('active');
+            $(this).addClass('active');
+        }
+    })
+
+    //Плавный скрол к элементу
+    function scrollTo(element) {
+        $("html, body").animate({ scrollTop: $(element).offset().top }, 1000);
+    }
+
+    //Добавить в заказ
+    $('.jsAddToOrder').on('click', function(e) {
+        e.preventDefault();
+        const service = $(this).data('service');
+        const link = $(this).attr('href');
+
+        scrollTo(link);
+        $(`#${service}`).prop('checked', true);
+    });
+
+    //Переход к табу
+    $('.jsGoTab').on('click', function(e) {
+        e.preventDefault();
+        const link = $(this).attr('href');
+        const tab = $(this).data('tab');
+
+        scrollTo(link);
+        $(`.jsTab[data-tab='${tab}']`).click();
+    })
 });

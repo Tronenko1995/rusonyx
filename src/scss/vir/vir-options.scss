@@ -49,4 +49,383 @@
         color: #00AA9B;
         border-bottom: 3px solid #00AA9B;
     }
+    &__containers {
+
+    }
+    &__container {
+        margin-top: 72px;
+        &--2 {
+            .vir-options__container-main-img {
+                width: 365px;
+                height: 209px;
+            }
+            .vir-options__container-main-right {
+                margin-left: 70px;
+            }
+            .vir-options__container-stand-item-title {
+                margin-top: 0;
+            }
+            .vir-options__container-stand-item-info-text {
+                margin-top: 0;
+            }
+        }
+        &--3 {
+            .vir-options__container-main-img {
+                width: 365px;
+                height: 209px;
+            }
+            .vir-options__container-main-right {
+                margin-left: 70px;
+            }
+            .vir-options__container-main-item {
+                width: 300px;
+            }
+        }
+        &--4 {
+            .vir-options__container-main-img {
+                width: 365px;
+                height: 209px;
+            }
+            .vir-options__container-main-right {
+                margin-left: 70px;
+            }
+            .vir-options__container-main-info {
+                width: 679px;
+                margin-top: 64px;
+            }
+            .vir-options__container-main-text {
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &--5 {
+            .vir-options__container-main-img {
+                width: 365px;
+                height: 209px;
+                background: #C4C4C4;
+            }
+            .vir-options__container-main-right {
+                margin-left: 70px;
+            }
+            .vir-options__container-main-info {
+                width: 679px;
+                margin-top: 64px;
+            }
+            .vir-options__container-main-text {
+                margin-bottom: 20px;
+                &:first-child {
+                    margin-bottom: 32px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-main {
+            display: flex;
+            margin-bottom: 100px;
+            &-left {
+
+            }
+            &-right {
+                margin-left: 123px;
+                width: 100%;
+                &-head {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            &-img {
+                width: 280px;
+                height: 480px;
+            }
+            &-title {
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 48px;
+                line-height: 58px;
+                color: #901E65;
+                
+            }
+            &-info {
+                margin-top: 12px;
+            }
+            &-text {
+                margin-bottom: 6px;
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #333333;
+                &--bold {
+                    font-weight: 500;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &-list {
+                margin-top: 32px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &-item {
+                width: 290px;
+                margin-right: 120px;
+                margin-top: 32px;
+                &-title {
+                    font-family: 'PF Din Text Cond Pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #0A3C4A;
+                    position: relative;
+                    &:before {
+                        width: 12px;
+                        height: 12px;
+                        position: absolute;
+                        content: '';
+                        min-width: 12px;
+                        min-height: 12px;
+                        background-color: #e9d2e0;
+                        right: 100%;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        top: 6px;
+                        // top: 50%;
+                        // transform: translateY(-50%);
+                    }
+                    &:after {
+                        width: 4px;
+                        height: 4px;
+                        position: absolute;
+                        content: '';
+                        min-width: 4px;
+                        min-height: 4px;
+                        background-color: #901E65;
+                        right: 100%;
+                        border-radius: 50%;
+                        margin-right: 14px;
+                        top: 10px;
+                        // top: 50%;
+                        // transform: translateY(-50%);
+                    }
+                }
+                &-text {
+                    margin-top: 16px;
+                    font-family: 'PF Din Text Cond Pro';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #333333;
+                }
+                .vir-options__container-main-item-ul {
+                    list-style: disc;
+                    margin-top: 16px;
+                }
+                &-li {
+                    font-family: 'PF Din Text Cond Pro';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #333333;
+                    &::marker {
+                        color: #901E65
+                    }
+                }
+            }
+            &-button {
+                background: #00AA9B;
+                cursor: pointer;
+                padding: 16px 72px 16px 73px;
+                box-shadow: 0px 5px 0px rgb(62, 119, 114);
+                outline: none;
+    
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                &:hover,
+                &:focus {
+                    background: #3E7772;
+                }
+            }
+            &-row {
+                display: flex;
+                margin-top: 64px;
+            }
+            &-block {
+                margin-right: 88px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &-list {
+                    list-style: disc !important;
+                    width: 465px;
+                }
+                &-item {
+                    font-family: 'PF Din Text Cond Pro';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #333333;
+                    margin-bottom: 25px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &::marker {
+                        color: #901E65;
+                    }
+                }
+            }
+            &-premium {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 46px;
+                &-item {
+                    width: 214px;
+                    padding: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ebeff1;
+                    margin-right: 40px;
+                    &:last-child  {
+                        margin-right: 0;
+                    }
+                    &-svg {
+                        width: 87px;
+                        height: 53px;
+                    }
+                    &-text {
+                        margin-top: 20px;
+                        font-family: 'PF Din Text Cond Pro';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        color: #0A3C4A;
+                    }
+                }
+            }
+        }
+        &-stand {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+            margin-bottom: 100px;
+            border-top: 1px solid #C4C4C4;
+            &-item {
+                width: 550px;
+                &-img {
+
+                }
+                &-title {
+                    font-family: 'PF Din Text Cond Pro';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #333333;
+                    margin-top: 30px;
+                }
+                &-info {
+                    margin-top: 32px;
+                    &-title {
+                        font-family: 'PF Din Text Cond Pro';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #0A3C4A;
+                    }
+                    &-text {
+                        font-family: 'PF Din Text Cond Pro';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #333333;
+                        margin-top: 16px;
+                    }
+                    .vir-options__container-stand-item-info-list {
+                        list-style: disc;
+                        margin-left: 16px;
+                        margin-top: 24px;
+                    }
+                    &-item {
+                        font-family: 'PF Din Text Cond Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 180%;
+                        color: #333333;
+                        &::marker {
+                            color: #901E65;
+                        }
+                        &--bold {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        &-compare {
+            padding-top: 100px;
+            border-top: 1px solid #C4C4C4;
+            &-title {
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 36px;
+                color: #333333;
+            }
+            &-text {
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 140%;
+                color: #333333;
+                margin-top: 16px;
+                width: 553px;
+            }
+            &-table {
+            }
+            &-button {
+                margin-top: 72px;
+            }
+            &-link {
+                background: #00AA9B;
+                cursor: pointer;
+                padding: 16px 105px;
+                box-shadow: 0px 5px 0px rgb(62, 119, 114);
+                outline: none;
+    
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                &:hover,
+                &:focus {
+                    background: #3E7772;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,50 @@
+.vir-table {
+    margin-top: 72px;
+    width: 1200px;
+    border-collapse: collapse;
+
+    &__head {
+        &-cell {
+            text-align: left;
+            padding-bottom: 32px;
+
+            &-title {
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #828282;
+            }
+            &-text {
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 24px;
+                color: #901E65;
+            }
+        }
+
+    }
+    &__body {
+        &-cell {
+            text-align: left;
+            padding: 16px 0 18px 0;
+            border-bottom: 1px solid #E0E0E0;
+            &-text {
+                font-family: 'PF Din Text Cond Pro';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 140%;
+                color: #333333;
+                max-width: 321px;
+            }
+            &-svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

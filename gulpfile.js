@@ -18,7 +18,7 @@ const webp = require("gulp-webp");
 
 const del = require('del');
 
-const server = require('browser-sync').create();
+const browserSync = require('browser-sync').create();
 
 const cache = require('gulp-cache');
 
@@ -53,7 +53,7 @@ function styles() {
   	suffix: '.min'
   }))
 	.pipe(gulp.dest('dist/css'))
-	.pipe(server.stream());
+	.pipe(browserSync.reload({ stream: true }));
 }
 
 
@@ -68,7 +68,7 @@ function scripts() {
   	suffix: '.min'
   }))
 	.pipe(gulp.dest('dist/js'))
-	.pipe(server.stream());
+	.pipe(browserSync.reload({ stream: true }));
 }
 
 function images () {
@@ -88,7 +88,6 @@ function webpfun () {
 
 function html () {
 	return gulp.src("src/*.html")
-
 	.pipe(gulp.dest("dist"));
 }
 
@@ -97,7 +96,7 @@ function clear() {
 }
 
 function watch() {
-  server.init({
+	browserSync.init({
     server: {
       baseDir: "dist/",
       index: "index.html",
@@ -115,7 +114,7 @@ function watch() {
 	// gulp.watch("source/img/**/*.{png,jpg,jpeg}", gulp.series(images, webpfun))
 	gulp.watch("src/img/**/*.{png,jpg,jpeg}", images)
 	gulp.watch("src/img/**/*.{svg,gif}", copy)
-  gulp.watch("src/*.html").on('change', gulp.series(html,server.reload));
+  gulp.watch("src/*.html").on('change', gulp.parallel(html,browserSync.reload));
 }
 
 gulp.task("clean", clean);
