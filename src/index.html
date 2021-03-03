@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rusonyx Virtual Cloud</title>
     
     <!-- jQuery 1.11.3 for development -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -16,7 +16,7 @@
     <script src="libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
 
     <script src="js/virtual-cloud.min.js"></script>
-    <link rel="stylesheet" href="/css/virtual-cloud.min.css">
+    <link rel="stylesheet" href="css/virtual-cloud.min.css">
 
 </head>
 <body>
@@ -141,7 +141,7 @@
                                 <p class="vir-subdomain__price-item-text">1 150 руб.</p>
                             </div>
                             <div class="vir-subdomain__price-item-status">
-                                <p class="vir-subdomain__price-item-button">Купить</p>
+                                <a href="#virCalculator" class="vir-subdomain__price-item-button jsGoLink">Купить</a>
                             </div>
                         </div>
 
@@ -153,7 +153,7 @@
                                 <p class="vir-subdomain__price-item-text">1 150 руб.</p>
                             </div>
                             <div class="vir-subdomain__price-item-status">
-                                <p class="vir-subdomain__price-item-button">Купить</p>
+                                <a href="#virCalculator" class="vir-subdomain__price-item-button jsGoLink">Купить</a>
                             </div>
                         </div>
 
@@ -179,7 +179,7 @@
                                 </div>
                                 <div class="vir-slider__info">
                                     <p class="vir-slider__info-text">1</p>
-                                    <p class="vir-slider__info-text">190</p>
+                                    <p class="vir-slider__info-text">100</p>
                                 </div>
                             </div>
                             <div class="vir-calculator__block-item">
@@ -191,7 +191,7 @@
                                 </div>
                                 <div class="vir-slider__info">
                                     <p class="vir-slider__info-text">1</p>
-                                    <p class="vir-slider__info-text">190</p>
+                                    <p class="vir-slider__info-text">100</p>
                                 </div>
                             </div>
     
@@ -209,17 +209,16 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input id="service1" type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service1" type="checkbox" name="PleskWordPressToolkit" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Plesk WordPress Toolkit</span>
                                         </label>
                                     </div>
                                     <div class="vir-calculator__block-container-item-right">
                                         <div class="vir-calculator__block-container-item-price">
-                                            <p class="vir-calculator__block-container-item-price-text">550 руб.</p>
+                                            <p class="vir-calculator__block-container-item-price-text"><span id="PleskWordPressToolkitText">0</span> руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <a href="#virOptions" data-tab="tab1" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
-                                            </a>
+                                            <a href="#virOptions" data-tab="tab1" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -227,30 +226,29 @@
                                 <div class="vir-calculator__block-container-item vir-calculator__block-container-item--select">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input id="service2" type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service2" type="checkbox" name="PremiumEmail" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Premium Email</span>
                                         </label>
-                                        <div class="vir-calculator__block-container-item-select vir-select">
-                                            <input class="vir-select__input" type="hidden" name="">
-                                            <div class="vir-select__head">Medium (100 users)</div>
+                                        <div id="premEmail" class="vir-calculator__block-container-item-select vir-select">
+                                            <input class="vir-select__input" type="hidden" name="PremiumEmailUser" value="user1">
+                                            <div class="vir-select__head">Personal (1 user)</div>
                                             <ul class="vir-select__list">
-                                                <li class="vir-select__item">Personal (1 user)</li>
-                                                <li class="vir-select__item">Family (5 users)</li>
-                                                <li class="vir-select__item">Entry (10 users) </li>
-                                                <li class="vir-select__item">Starter (30 users) </li>
-                                                <li class="vir-select__item">Small (50 users) </li>
-                                                <li class="vir-select__item">Medium (100 users)</li>
-                                                <li class="vir-select__item">Large (500 users)</li>
+                                                <li class="vir-select__item" data-value="user1">Personal (1 user)</li>
+                                                <li class="vir-select__item" data-value="family5">Family (5 users)</li>
+                                                <li class="vir-select__item" data-value="entry10">Entry (10 users) </li>
+                                                <li class="vir-select__item" data-value="starter30">Starter (30 users) </li>
+                                                <li class="vir-select__item" data-value="small50">Small (50 users) </li>
+                                                <li class="vir-select__item" data-value="medium100">Medium (100 users)</li>
+                                                <li class="vir-select__item" data-value="large500">Large (500 users)</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="vir-calculator__block-container-item-right">
                                         <div class="vir-calculator__block-container-item-price">
-                                            <p class="vir-calculator__block-container-item-price-text">6 310 руб/мес.</p>
+                                            <p class="vir-calculator__block-container-item-price-text"><span id="PremiumEmailText">0</span> руб/мес.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <a href="#virOptions" data-tab="tab2" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
-                                            </a>
+                                            <a href="#virOptions" data-tab="tab2" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -259,17 +257,16 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input id="service3" type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service3" type="checkbox" name="PleskImunify360" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Антивирус imunify360</span>
                                         </label>
                                     </div>
                                     <div class="vir-calculator__block-container-item-right">
                                         <div class="vir-calculator__block-container-item-price">
-                                            <p class="vir-calculator__block-container-item-price-text">1090 руб.</p>
+                                            <p class="vir-calculator__block-container-item-price-text"><span id="PleskImunify360Text">0</span> руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <a href="#virOptions" data-tab="tab3" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
-                                            </a>
+                                            <a href="#virOptions" data-tab="tab3" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -277,17 +274,16 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input id="service4" type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service4" type="checkbox" name="SSLAlphaSSL" class="vir-checkbox__input">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">SSL AlphaSSL</span>
                                         </label>
                                     </div>
                                     <div class="vir-calculator__block-container-item-right">
                                         <div class="vir-calculator__block-container-item-price">
-                                            <p class="vir-calculator__block-container-item-price-text">2 300 руб.</p>
+                                            <p class="vir-calculator__block-container-item-price-text"><span id="SSLAlphaSSLText">0</span> руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <a href="#virOptions" data-tab="tab4" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
-                                            </a>
+                                            <a href="#virOptions" data-tab="tab4" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -295,46 +291,43 @@
                                 <div class="vir-calculator__block-container-item">
                                     <div class="vir-calculator__block-container-item-left">
                                         <label class="vir-calculator__block-container-item-checkbox-label vir-checkbox__label">
-                                            <input id="service5" type="checkbox" name="" value="" class="vir-checkbox__input">
+                                            <input id="service5" type="checkbox" class="vir-checkbox__input" name="OptimizationForBitrix">
                                             <span class="vir-checkbox__span"></span><span class="vir-checkbox__text">Оптимизация под CMS Битрикс</span>
                                         </label>
                                     </div>
                                     <div class="vir-calculator__block-container-item-right">
                                         <div class="vir-calculator__block-container-item-price">
-                                            <p class="vir-calculator__block-container-item-price-text">260 руб.</p>
+                                            <p class="vir-calculator__block-container-item-price-text"><span id="OptimizationForBitrixText">0</span> руб.</p>
                                         </div>
                                         <div class="vir-calculator__block-container-item-info">
-                                            <a href="#virOptions" data-tab="tab5" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab">
-                                            </a>
-                                            </div>
+                                            <a href="#virOptions" data-tab="tab5" class="vir-calculator__block-container-item-info-svg vir-svg-info jsGoTab"></a>
                                         </div>
 
                                     </div>
 
                                 </div>
-                                <div class="vir-calculator__block-footer">
-                                    <p class="vir-calculator__block-footer-text">При заказе опций вместе с хостингом вы получаете <span class="vir-calculator__block-footer-text--discount">скидку 20%</span> (цены указаны с учётом скидки).</p>
-                                </div>
                             </div>
-                        </div>
-
+                            <div class="vir-calculator__block-footer">
+                                <p class="vir-calculator__block-footer-text">При заказе опций вместе с хостингом вы получаете <span class="vir-calculator__block-footer-text--discount">скидку 20%</span> (цены указаны с учётом скидки).</p>
+                            </div>
                     </div>
+
                 </div>
                 <div class="vir-calculator__total">
                     <div class="vir-calculator__total-row">
                         <div class="vir-calculator__total-main">
                             <p class="vir-calculator__total-text">Итоговая стоимость:</p>
-                            <p class="vir-calculator__total-price">31 235 руб.</p>
+                            <p class="vir-calculator__total-price"><span id="totalPrice">0</span> руб.</p>
                         </div>
-                        <div class="vir-calculator__total-select vir-select">
-                            <input class="vir-select__input" type="hidden" name="">
-                            <div class="vir-select__head">3 месяца</div>
+                        <div id="term" class="vir-calculator__total-select vir-select">
+                            <input class="vir-select__input" type="hidden" name="term" value="1">
+                            <div class="vir-select__head">1 месяц</div>
                             <ul class="vir-select__list">
-                                <li class="vir-select__item">1 месяц</li>
-                                <li class="vir-select__item">3 месяца</li>
-                                <li class="vir-select__item">6 месяцев</li>
-                                <li class="vir-select__item">12 месяцев</li>
-                                <li class="vir-select__item">18 месяцев</li>
+                                <li class="vir-select__item" data-value="1">1 месяц</li>
+                                <li class="vir-select__item" data-value="3">3 месяца</li>
+                                <li class="vir-select__item" data-value="6">6 месяцев</li>
+                                <li class="vir-select__item" data-value="12">12 месяцев</li>
+                                <li class="vir-select__item" data-value="18">18 месяцев</li>
                             </ul>
                         </div>
                         <div class="vir-calculator__total-info">
@@ -458,7 +451,7 @@
                     </div>
                     <div class="vir-options__container-compare">
                         <p class="vir-options__container-compare-title">Сравнение бесплатной и платной версии</p>
-                        <table class="vir-options__container-compare-table vir-table" cellspacing="0" cellpadding="0">
+                        <table class="vir-options__container-compare-table vir-table">
                             <thead class="vir-table__head">
                                 <tr class="vir-table__head-row">
                                     <th class="vir-table__head-cell">&nbsp;</th>
@@ -466,7 +459,7 @@
                                         <p class="vir-table__head-cell-title">Включено в:</p>
                                         <p class="vir-table__head-cell-text">Plesk Web Admin Edition</p>
                                     </th>
-                                    <th class="vir-table__head-cell" width="339">
+                                    <th class="vir-table__head-cell vir-table__head-cell--min">
                                         <p class="vir-table__head-cell-title">Включено в:</p>
                                         <p class="vir-table__head-cell-text">Plesk Web Pro Edition & Plesk Web Host Edition</p>
                                     </th>
@@ -732,7 +725,7 @@
                     <div class="vir-options__container-compare">
                         <p class="vir-options__container-compare-title">Сравнение бесплатной и платной версии</p>
                         <p class="vir-options__container-compare-text">Все опции доступны с предоставляемого браузерного клиента и могут быть использованы на локальных клиентах, включая мобильные приложения для почты.</p>
-                        <table class="vir-options__container-compare-table vir-table" cellspacing="0" cellpadding="0">
+                        <table class="vir-options__container-compare-table vir-table">
                             <thead class="vir-table__head">
                                 <tr class="vir-table__head-row">
                                     <th class="vir-table__head-cell">&nbsp;</th>
@@ -740,7 +733,7 @@
                                         <p class="vir-table__head-cell-title">Включено в:</p>
                                         <p class="vir-table__head-cell-text">Plesk Web Admin Edition</p>
                                     </th>
-                                    <th class="vir-table__head-cell" width="339">
+                                    <th class="vir-table__head-cell vir-table__head-cell--min">
                                         <p class="vir-table__head-cell-title">Включено в:</p>
                                         <p class="vir-table__head-cell-text">Plesk Web Pro Edition & Plesk Web Host Edition</p>
                                     </th>
@@ -1010,6 +1003,73 @@
                 </div>
             </div>
             
+        </section>
+
+        <section class="vir-excellence">
+            <h2 class="vir-excellence__title">Преимущества облачного хостинга Rusonyx</h2>
+            <div class="vir-excellence__items">
+                <div class="vir-excellence__item">
+                    <p class="vir-excellence__item-text"><span class="vir-excellence__item-text--bold">Быстрые NVMe диски.</span> В наших промышленных серверах Intel используются высокопроизводительные твердотельные диски стандарта NVMe обеспечивающие в 6 раз выше скорость, чем SSD. Ваши проекты будут открываться практически мгновенно.</p>
+                </div>
+                <div class="vir-excellence__item">
+                    <p class="vir-excellence__item-text">Несём финансовую ответственность за работу сервисов 
+                        <span class="vir-excellence__item-text--bold">-&nbsp;SLA 99,98%.</span></p>
+                </div>
+                <div class="vir-excellence__item">
+                    <p class="vir-excellence__item-text"><span class="vir-excellence__item-text--bold">Постоянный онлайн</span> – три upstream провайдера, защита от DDoS.</p>
+                </div>
+                <div class="vir-excellence__item">
+                    <p class="vir-excellence__item-text">Наши сервера установлены в самом надёжном дата центре России - <span class="vir-excellence__item-text--bold">DataPro</span>, который отвечает уровню надежности Tier 3+ и международному стандарту (TIA-942) для Дата-Центров. Общая пропускная способность каналов связи превышает 100 Гбит/сек.</p>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .ready-block {
+                width: 100%;
+                height: auto;
+            }
+            .ready-block__img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <section class="ready-block">
+            <img class="ready-block__img" src="img/ready-block-1.jpg" alt="" width="1920" height="300">
+        </section>
+        <section class="ready-block">
+            <img class="ready-block__img" src="img/ready-block-2.jpg" alt="" width="1920" height="601">
+        </section>
+
+        <section class="vir-relax">
+            <div class="vir-relax__left">
+                <h2 class="vir-relax__title">Вам не нужно думать о переносе существующих ресурсов в облако, мы берем это на себя.</h2>
+                <p class="vir-relax__text">Кроме всего прочего, служба поддержки Rusonyx всегда рада помочь своим клиентам с решением вопроса масштабирования, настройкой, выбором оптимального варианта системы хранения или тарифа. Комфорт, уверенность в завтрашнем дне и приятный хостинг — вот, что ждет наших клиентов!
+                </p>
+                <a class="vir-relax__link jsGoLink" href="#virCalculator">Заказать</a>
+            </div>
+            <div class="vir-relax__right">
+                <img src="img/vir-relax.jpg" alt="" width="945" height="663" class="vir-relax__img">
+            </div>
+        </section>
+
+        <section class="vir-reviews">
+            <div class="vir-reviews__left">
+                <h2 class="vir-reviews__title">Отзывы</h2>
+            </div>
+            <div class="vir-reviews__right">
+                <div class="vir-reviews__item">
+                    <p class="vir-reviews__item-text">Профессионализм, потрясающая гибкость, ориентированность на решение задач клиента и просто нормальный человеческий подход! Русоникс – надёжный партнёр, которому мы доверяем уже много лет. Мы всегда уверены, что нам готовы оперативно помочь в решении самых сложных задачах.</p>
+                    <div class="vir-reviews__item-footer">
+                        <img class="vir-reviews__item-img" src="img/reviews/my-shop.png" alt="" width="122" height="118">
+                        <div class="vir-reviews__item-footer-block">
+                            <p class="vir-reviews__item-footer-block-name">Игорь Супрун</p>
+                            <p class="vir-reviews__item-footer-block-description">Интернет-магазин my-shop.ru<br />my-shop.ru</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
     </main>

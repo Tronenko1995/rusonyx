@@ -137,9 +137,8 @@ body {
     position: absolute;
     z-index: 2;
     position: absolute;
-    top: -.3em;
     top: -7px;
-    margin-left: -.6em;
+    margin-left: -4px;
     -ms-touch-action: none;
     touch-action: none;
     border: none !important; }
@@ -1445,6 +1444,8 @@ body {
   .vir-table__head-cell {
     text-align: left;
     padding-bottom: 32px; }
+    .vir-table__head-cell--min {
+      width: 339px; }
     .vir-table__head-cell-title {
       font-family: 'PF Din Text Cond Pro';
       font-style: normal;
@@ -1481,15 +1482,15 @@ body {
 
 @media (max-width: 1200px) {
   .vir-table__head-cell {
-    padding: 15px;
-    width: auto; }
+    padding: 15px; }
+    .vir-table__head-cell--min {
+      width: auto; }
     .vir-table__head-cell-title {
       font-size: 16px; }
     .vir-table__head-cell-text {
       font-size: 18px; }
   .vir-table__body-cell {
-    padding: 15px;
-    width: auto; } }
+    padding: 15px; } }
 
 @media (max-width: 768px) {
   .vir-table {
@@ -1514,3 +1515,314 @@ body {
       padding: 5px; }
       .vir-table__body-cell-text {
         font-size: 14px; } }
+
+.vir-excellence {
+  width: 100%;
+  background-color: #e5e5e5;
+  padding: 127px 85px 100px; }
+  .vir-excellence__title {
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
+    color: #333333;
+    text-align: center; }
+  .vir-excellence__items {
+    margin-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    counter-reset: excellence;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .vir-excellence__item {
+    width: 20%;
+    min-width: 300px;
+    margin: 40px 15px;
+    padding: 30px;
+    background: #fff;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    .vir-excellence__item::before {
+      counter-increment: excellence;
+      content: "0" counter(excellence);
+      position: absolute;
+      font-family: 'PF Din Text Cond Pro';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 115px;
+      letter-spacing: -0.06em;
+      color: #E12725;
+      top: -81px;
+      left: 0;
+      -webkit-transform: translateZ(-1px);
+      transform: translateZ(-1px); }
+    .vir-excellence__item-text {
+      font-family: 'PF Din Text Cond Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 140%;
+      color: #333333; }
+      .vir-excellence__item-text--bold {
+        font-weight: 500; }
+
+@media (max-width: 1200px) {
+  .vir-excellence__title {
+    font-size: 40px;
+    line-height: 1.3; } }
+
+@media (max-width: 768px) {
+  .vir-excellence {
+    padding: 70px 50px; }
+    .vir-excellence__title {
+      font-size: 35px; }
+    .vir-excellence__items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .vir-excellence__item {
+      padding: 24px;
+      margin: 50px 0; }
+      .vir-excellence__item:before {
+        left: 50%;
+        -webkit-transform: translateZ(-1px) translateX(-50%);
+        transform: translateZ(-1px) translateX(-50%); } }
+
+@media (max-width: 600px) {
+  .vir-excellence {
+    padding: 40px 20px; } }
+
+.vir-relax {
+  width: 100%;
+  background-color: #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .vir-relax__left {
+    width: 793px;
+    margin-left: 85px; }
+  .vir-relax__right {
+    margin-left: 51px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: auto; }
+  .vir-relax__title {
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000; }
+  .vir-relax__text {
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    margin-top: 56px; }
+  .vir-relax__link {
+    margin-top: 64px;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: #00AA9B;
+    cursor: pointer;
+    padding: 16px 105px;
+    -webkit-box-shadow: 0px 5px 0px #3e7772;
+    box-shadow: 0px 5px 0px #3e7772;
+    outline: none;
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF; }
+    .vir-relax__link:hover, .vir-relax__link:focus {
+      background: #3E7772; }
+  .vir-relax__img {
+    width: 100%;
+    height: auto; }
+
+@media (max-width: 1500px) {
+  .vir-relax__title {
+    font-size: 40px;
+    line-height: 1.2; }
+  .vir-relax__text {
+    margin-top: 32px; }
+  .vir-relax__link {
+    margin-top: 32px; } }
+
+@media (max-width: 1300px) {
+  .vir-relax__title {
+    font-size: 35px;
+    line-height: 1.2; } }
+
+@media (max-width: 1200px) {
+  .vir-relax {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .vir-relax__left {
+      margin: 100px 0;
+      width: auto;
+      max-width: 1115px;
+      padding: 0 85px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .vir-relax__right {
+      margin-left: 0; }
+    .vir-relax__title {
+      font-size: 40px;
+      line-height: 1.3; }
+    .vir-relax__text {
+      margin-top: 56px; }
+    .vir-relax__link {
+      margin-top: 56px; } }
+
+@media (max-width: 1000px) {
+  .vir-relax__title {
+    font-size: 35px; }
+  .vir-relax__text {
+    margin-top: 40px; }
+  .vir-relax__link {
+    margin-top: 40px; } }
+
+@media (max-width: 768px) {
+  .vir-relax__left {
+    margin: 70px 0;
+    padding: 0 50px; }
+  .vir-relax__title {
+    font-size: 30px; } }
+
+@media (max-width: 600px) {
+  .vir-relax__left {
+    margin: 40px 0;
+    padding: 0 20px; }
+  .vir-relax__title {
+    font-size: 25px; } }
+
+.vir-reviews {
+  width: 100%;
+  background-color: #fff;
+  padding: 106px 85px 100px 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .vir-reviews__item {
+    width: 1035px; }
+    .vir-reviews__item-text {
+      font-family: 'PF Din Text Cond Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 140%;
+      color: #000000; }
+    .vir-reviews__item-footer {
+      margin-top: 32px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .vir-reviews__item-footer-block {
+        margin-left: 32px; }
+        .vir-reviews__item-footer-block-name {
+          font-family: 'PF Din Text Cond Pro';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 30px;
+          line-height: 36px;
+          color: #E22D24; }
+        .vir-reviews__item-footer-block-description {
+          margin-top: 12px;
+          font-family: 'PF Din Text Cond Pro';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 140%;
+          color: #000000; }
+  .vir-reviews__title {
+    font-family: 'PF Din Text Cond Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
+    color: #333333; }
+
+@media (max-width: 1400px) {
+  .vir-reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .vir-reviews__right {
+      margin-top: 30px; }
+    .vir-reviews__item {
+      width: 100%;
+      max-width: 945px; } }
+
+@media (max-width: 1200px) {
+  .vir-reviews__title {
+    font-size: 40px;
+    line-height: 1.3; } }
+
+@media (max-width: 768px) {
+  .vir-reviews {
+    padding: 70px 50px; }
+    .vir-reviews__title {
+      font-size: 35px;
+      line-height: 1.3; }
+    .vir-reviews__item-text {
+      font-size: 22px; }
+    .vir-reviews__item-footer-block-name {
+      font-size: 26px; } }
+
+@media (max-width: 600px) {
+  .vir-reviews {
+    padding: 40px 20px; }
+    .vir-reviews__item-text {
+      font-size: 20px; }
+    .vir-reviews__item-footer-block-name {
+      font-size: 24px; } }
