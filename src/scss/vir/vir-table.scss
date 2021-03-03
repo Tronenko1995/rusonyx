@@ -48,3 +48,77 @@
         }
     }
 }
+
+
+@media (max-width: 1400px) {
+    .vir-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .vir-table {
+        &__head {
+            &-cell {
+                padding: 15px;
+                width: auto;
+                &-title {
+                    font-size: 16px;
+                }
+                &-text {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__body {
+            &-cell {
+                padding: 15px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .vir-table {
+        margin-top: 40px;
+        &__head {
+            &-cell {
+                padding: 10px;
+                &-title {
+                    font-size: 14px;
+                }
+                &-text {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__body {
+            &-cell {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .vir-table {
+        margin-top: 20px;
+        &__head {
+            &-cell {
+                padding: 5px;
+                &-text {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__body {
+            &-cell {
+                padding: 5px;
+                &-text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
