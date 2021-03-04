@@ -1,7 +1,14 @@
 .vir-excellence {
     width: 100%;
     background-color: #e5e5e5;
-    padding: 127px 85px 100px;
+    display: flex;
+    justify-content: center;
+    
+    &__wrap {
+        width: 1920px;
+        max-width: 100%;
+        padding: 127px 85px 100px;
+    }
     
     &__title {
         font-family: 'PF Din Text Cond Pro';
@@ -71,7 +78,9 @@
 
 @media (max-width: 768px) {
     .vir-excellence {
-        padding: 70px 50px;
+        &__wrap {
+            padding: 70px 50px;
+        }
         &__title {
             font-size: 35px;
         }
@@ -93,6 +102,8 @@
 
 @media (max-width: 600px) {
     .vir-excellence {
-        padding: 40px 20px;
+        &__wrap {
+            padding: 40px 20px;
+        }
     }
 }

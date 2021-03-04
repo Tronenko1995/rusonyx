@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     //переменные
     const price = {
+            minimum: 190,
             PleskWordPressToolkit: 250,
             PremiumEmail: {
                 user1: 290,
@@ -14,7 +15,10 @@ $(document).ready(function() {
             },
             PleskImunify360: 1090,
             SSLAlphaSSL: 2300,
-            OptimizationForBitrix: 260
+            OptimizationForBitrix: 260,
+            NVMe: 49.90,
+            Site: 24.90,
+            sale24m: 0.24
         },
 
         PleskWordPressToolkit_checkbox = $('input[name="PleskWordPressToolkit"]'),
@@ -34,11 +38,19 @@ $(document).ready(function() {
 
         totalPrice = $('#totalPrice');
 
-    let PremiumEmailUser_selectVal = $(PremiumEmailUser_select).val();
+        totalPriceSale = $('#totalPriceSale');
+        totalPriceSaleBlock = $('#sale');
+
+    let PremiumEmailUser_selectVal = $(PremiumEmailUser_select).val(),
+        term_selectVal = $(term).val(),
+        polz1 = 1;
+        polz2 = 1;
 
 
     function calculator() {
-        let total = 0;
+        let total = price.minimum - price.NVMe - price.Site,
+            sale = 0;
+
         if (PleskWordPressToolkit_checkbox.is(':checked')) {
             total = total + price.PleskWordPressToolkit;
         }
@@ -54,37 +66,59 @@ $(document).ready(function() {
         if (OptimizationForBitrix_checkbox.is(':checked')) {
             total = total + price.OptimizationForBitrix;
         }
-        $(totalPrice).text(total);
-    }
+        total = total + (polz1*price.NVMe);
+        total = total + (polz2*price.Site);
 
-    $(PleskWordPressToolkit_checkbox).on('change', function() {
+        
+        if (term_selectVal == 24) {
+            $(totalPriceSaleBlock).removeClass('hide');
+            sale = (total * price.sale24m * term_selectVal);
+            total = (total - (total * price.sale24m)) * term_selectVal;
+        } else {
+            $(totalPriceSaleBlock).addClass('hide');
+            total = total * term_selectVal;
+        }
+        console.log(term_selectVal);
+
+        $(totalPrice).text(total.toFixed(2));
+        $(totalPriceSale).text(sale.toFixed(2));
+        humanMoney(totalPrice, 2);
+        humanMoney(totalPriceSale, 2);
+    }
+    calculator();
+    $('.jsVirCheckBox').on('change', function() {
         calculator();
-    })
-    $(PremiumEmail_checkbox).on('change', function() {
-        calculator();
-    })
-    $(PleskImunify360_checkbox).on('change', function() {
-        calculator();
-    })
-    $(SSLAlphaSSL_checkbox).on('change', function() {
-        calculator();
-    })
-    $(OptimizationForBitrix_checkbox).on('change', function() {
-        calculator();
-    })
+    });
 
     function renderTextCalculator() {
         $(PleskWordPressToolkitText).text(price.PleskWordPressToolkit);
+        humanMoney(PleskWordPressToolkitText, 0);
+
         $(PremiumEmailText).text(price.PremiumEmail[PremiumEmailUser_selectVal]);
+        humanMoney(PremiumEmailText, 0);
+
         $(PleskImunify360Text).text(price.PleskImunify360);
+        humanMoney(PleskImunify360Text, 0);
+
         $(SSLAlphaSSLText).text(price.SSLAlphaSSL);
+        humanMoney(SSLAlphaSSLText, 0);
+
         $(OptimizationForBitrixText).text(price.OptimizationForBitrix);
+        humanMoney(OptimizationForBitrixText, 0);
     }
     renderTextCalculator();
 
     function recountPremiumEmail() {
         $(PremiumEmailText).text(price.PremiumEmail[PremiumEmailUser_selectVal]);
+        humanMoney(PremiumEmailText, 0);
         calculator();
+    }
+
+    function humanMoney(select, num) {
+        $(select).text((e, text) => {
+            const price = text.split(' ');
+            return (+price).toLocaleString('ru-RU',{minimumFractionDigits: num});
+          });
     }
 
 
@@ -97,8 +131,7 @@ $(document).ready(function() {
             $('.jsPriceBlock').addClass('hide');
             $('.jsLine').addClass('hide');
         }
-    })
-
+    });
 
     //ползунок 1
     $('#virSlider1').slider({
@@ -109,6 +142,8 @@ $(document).ready(function() {
         max: 100,
         slide : function(event, ui) {
             $("#virSlider1Text").text(ui.value);
+            polz1 = ui.value;
+            calculator();
         }
     });
     $('#virSlider1Text').text($('#virSlider1').slider('value'));   
@@ -122,6 +157,8 @@ $(document).ready(function() {
         max: 100,
         slide : function(event, ui) {
             $("#virSlider2Text").text(ui.value);
+            polz2 = ui.value;
+            calculator();
         }
     });
     $('#virSlider2Text').text($('#virSlider2').slider('value')); 
@@ -136,7 +173,7 @@ $(document).ready(function() {
     });
     $('.vir-select').on('click', '.vir-select__item', function (e) {
         e.stopPropagation();
-        $(this).closest('.vir-select').find('.vir-select__head').text($(this).text())
+        $(this).closest('.vir-select').find('.vir-select__head').text($(this).find('span').text());
         $(this).closest('.vir-select').find('.vir-select__input').val($(this).data('value'));
         $('.vir-select').removeClass('open');
     });
@@ -146,7 +183,8 @@ $(document).ready(function() {
         recountPremiumEmail();
     });
     $('#term').on('click', '.vir-select__item', function (e) {
-        // recountPremiumEmail($(this).data('value'));
+        term_selectVal = $(term).val();
+        calculator();
     });
 
     //табы

@@ -1,6 +1,13 @@
 .vir-subdomain {
     width: 100%;
-    padding: 100px 85px 117px 85px;
+    display: flex;
+    justify-content: center;
+
+    &__wrap {
+        width: 1920px;
+        max-width: 100%;
+        padding: 100px 85px 117px 85px;
+    }
 
     &__title {
         font-family: 'PF Din Text Cond Pro';
@@ -12,14 +19,14 @@
     }
     &__row {
         display: flex;
-        margin-top: 58px;
+        // margin-top: 58px;
         justify-content: space-between;
     }
     &__selection {
         width: 547px;
-        padding-top: 75px;
+        // padding-top: 75px;
         &-block {
-            margin-top: 133px;
+            margin-top: 90px;
             display: flex;
             padding-bottom: 12px;
             border-bottom: 2px solid #BDBDBD;
@@ -219,7 +226,9 @@
 
 @media (max-width: 768px) {
     .vir-subdomain {
-        padding: 70px 50px;
+        &__wrap {
+            padding: 70px 50px;
+        }
         &__title {
             font-size: 35px;
         }
@@ -238,7 +247,9 @@
 
 @media (max-width: 600px) {
     .vir-subdomain {
-        padding: 40px 20px;
+        &__wrap {
+            padding: 40px 20px;
+        }
         &__title {
             font-size: 32px;
         }
@@ -265,7 +276,9 @@
 
 @media (max-width: 425px) {
     .vir-subdomain {
-        padding: 30px 15px;
+        &__wrap {
+            padding: 30px 15px;
+        }
         &__title {
             font-size: 30px;
         }

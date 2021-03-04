@@ -102,8 +102,7 @@ function watch() {
       index: "index.html",
       ghostMode: false,
       port: 3000,
-      notify: true,
-      ghostMode: false
+      notify: true
     }
   });
 

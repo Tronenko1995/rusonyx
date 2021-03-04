@@ -2,8 +2,15 @@
     width: 100%;
     background-color: #e5e5e5;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    &__wrap {
+        width: 1920px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     &__left {
         width: 793px;
@@ -60,6 +67,15 @@
     }
 }
 
+@media(min-width: 1920px) {
+    .vir-relax {
+        height: 663px;
+        &__right {
+            position: absolute;
+            right: 0;
+        }
+    }
+}
 
 @media (max-width: 1500px) {
 
@@ -92,8 +108,10 @@
 @media (max-width: 1200px) {
 
     .vir-relax {
-        flex-direction: column;
-        align-items: center;
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
         &__left {
             margin: 100px 0;
             width: auto;

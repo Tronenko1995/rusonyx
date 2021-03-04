@@ -1,7 +1,14 @@
 .vir-calculator {
     width: 100%;
     background-color: #E5E5E5;
-    padding: 127px 85px 100px 85px;
+    display: flex;
+    justify-content: center;
+    
+    &__wrap {
+        width: 1920px;
+        max-width: 100%;
+        padding: 127px 85px 100px 85px;
+    }
 
     &__form {
 
@@ -138,6 +145,17 @@
         &-main {
             display: flex;
             align-items: center;
+            &--sale {
+                .vir-calculator__total-text {
+                    color: #e12725;
+                    font-size: 22px;
+                }
+                .vir-calculator__total-price {
+                    color: #e12725;
+                    font-size: 27px;
+                    margin-left: 19px;
+                }
+            }
         }
         &-text {
             font-family: 'PF Din Text Cond Pro';
@@ -173,9 +191,20 @@
                 background: #00AA9B;
                 box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
                 margin-top: 0px;
+                ///
+                padding: 20px 0 0;
             }
             .vir-select__item {
                 color: #fff;
+                padding-left: 20px;
+                padding-right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:last-child {
+                    background: #e23f38;
+                    padding: 10px 20px;
+                }
                 &:hover {
                     color: #FFD64A
                 }
@@ -281,17 +310,33 @@
             &-price {
                 margin-left: 0;
             }
+            &-select {
+                order: -1;
+                margin: 0 0 20px 0;
+            }
         }
     }
 }
 
 @media (max-width: 768px) {
     .vir-calculator {
-        padding: 70px 50px;
+        &__wrap {
+            padding: 70px 50px;
+        }
         &__title {
             font-size: 35px;
         }
         &__total {
+            &-main {
+                &--sale {
+                    .vir-calculator__total-price {
+                        font-size: 20px;
+                    }
+                    .vir-calculator__total-text {
+                        font-size: 16px;
+                    }
+                }
+            }
             &-price {
                 font-size: 30px;
             }
@@ -302,10 +347,11 @@
     }
 }
 
-
 @media (max-width: 600px) {
     .vir-calculator {
-        padding: 40px 20px;
+        &__wrap {
+            padding: 40px 20px;
+        }
         &__block {
             &-container {
                 &-item {
@@ -344,9 +390,11 @@
 
 @media (max-width: 500px) {
     .vir-calculator {
+        &__wrap {
+            padding: 20px;
+        }
         &__block {
             &-container {
-                padding: 20px;
                 &-item {
                     &--select {
                         position: relative;

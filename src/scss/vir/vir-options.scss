@@ -1,7 +1,14 @@
 .vir-options {
     width: 100%;
     background-color: #fff;
-    padding: 127px 85px 100px 85px;
+    display: flex;
+    justify-content: center;
+
+    &__wrap {
+        width: 1920px;
+        max-width: 100%;
+        padding: 127px 85px 100px 85px;
+    }
 
     &__title {
         font-family: 'PF Din Text Cond Pro';
@@ -11,7 +18,7 @@
         line-height: 58px;
         color: #333333;
     }
-    &__wrap {
+    &__for-tabs {
         width: 100%;
         overflow-x: auto;
     }
@@ -577,7 +584,9 @@
 
 @media (max-width: 768px) {
     .vir-options {
-        padding: 70px 50px;
+        &__wrap {
+            padding: 70px 50px;
+        }
         &__title {
             font-size: 35px;
         }
@@ -658,7 +667,9 @@
 
 @media (max-width: 600px) {
     .vir-options {
-        padding: 40px 20px;
+        &__wrap {
+            padding: 40px 20px;
+        }
         &__tabs {
             &-item {
                 font-size: 16px;
