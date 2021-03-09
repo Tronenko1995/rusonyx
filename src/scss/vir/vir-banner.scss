@@ -5,7 +5,10 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(10, 60, 74, 0.85);
-    background-image: url('../img/vir-banner.jpg');
+    background-image: url('../img/vir-banner-2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
     &__title {
         font-family:'PF Din Text Cond Pro';
         font-style: normal;

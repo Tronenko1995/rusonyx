@@ -307,7 +307,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   background-color: rgba(10, 60, 74, 0.85);
-  background-image: url("../img/vir-banner.jpg"); }
+  background-image: url("../img/vir-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover; }
   .vir-banner__title {
     font-family: 'PF Din Text Cond Pro';
     font-style: normal;
@@ -988,8 +991,8 @@ body {
       height: 209px; }
     .vir-options__container--2 .vir-options__container-main-right {
       margin-left: 70px; }
-    .vir-options__container--2 .vir-options__container-stand-item-title {
-      margin-top: 0; }
+    .vir-options__container--2 .vir-options__container-main-info {
+      width: 685px; }
     .vir-options__container--2 .vir-options__container-stand-item-info-text {
       margin-top: 0; }
     .vir-options__container--3 .vir-options__container-main-img {
@@ -999,6 +1002,15 @@ body {
       margin-left: 70px; }
     .vir-options__container--3 .vir-options__container-main-item {
       width: 300px; }
+    .vir-options__container--3 .vir-options__container-main {
+      margin-bottom: 0; }
+    .vir-options__container--3 .vir-options__container-main-info {
+      width: 685px; }
+    .vir-options__container--3 .vir-options__container-stand {
+      padding-top: 0;
+      border: none; }
+    .vir-options__container--3 .vir-options__container-stand-item-img {
+      margin-top: 30px; }
     .vir-options__container--4 .vir-options__container-main-img {
       width: 365px;
       height: 209px; }
@@ -1026,13 +1038,16 @@ body {
         margin-bottom: 32px; }
       .vir-options__container--5 .vir-options__container-main-text:last-child {
         margin-bottom: 0; }
+    .vir-options__container--5 .vir-options__container-stand-item-info-list {
+      list-style-type: disc !important;
+      margin-left: 20px; }
     .vir-options__container-main {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       margin-bottom: 100px; }
       .vir-options__container-main-right {
-        margin-left: 123px;
+        margin-left: 155px;
         width: 100%; }
         .vir-options__container-main-right-head {
           display: -webkit-box;
@@ -1077,13 +1092,13 @@ body {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
       .vir-options__container-main-item {
         width: 290px;
         margin-right: 60px;
-        margin-left: 60px;
+        margin-left: 25px;
         margin-top: 32px; }
         .vir-options__container-main-item-title {
           font-family: 'PF Din Text Cond Pro';
@@ -1160,12 +1175,12 @@ body {
         margin-top: 64px;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
       .vir-options__container-main-block {
-        margin-right: 40px;
-        margin-left: 40px; }
+        margin-right: 60px;
+        margin-left: 17px; }
         .vir-options__container-main-block-list {
           list-style: disc !important;
           width: 465px;
@@ -1188,9 +1203,9 @@ body {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
         .vir-options__container-main-premium-item {
           margin-top: 46px;
           width: 214px;
@@ -1209,8 +1224,8 @@ body {
           -ms-flex-align: center;
           align-items: center;
           background-color: #ebeff1;
-          margin-right: 20px;
-          margin-left: 20px; }
+          margin-right: 40px;
+          margin-left: 0px; }
           .vir-options__container-main-premium-item-svg {
             width: 87px;
             height: 53px; }
@@ -1332,6 +1347,14 @@ body {
   .vir-options__container-main-button {
     margin-top: 20px;
     margin-bottom: 20px; }
+  .vir-options__container-main-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .vir-options__container--4 .vir-options__container-main-info {
     width: 100%; }
   .vir-options__container--5 .vir-options__container-main-info {
@@ -1359,8 +1382,14 @@ body {
     height: 384px; }
   .vir-options__container--2 .vir-options__container-main-right {
     margin-left: 0; }
+  .vir-options__container--2 .vir-options__container-main-info {
+    margin: 12px auto 0 auto;
+    width: auto; }
   .vir-options__container--3 .vir-options__container-main-right {
     margin-left: 0; }
+  .vir-options__container--3 .vir-options__container-main-info {
+    margin: 12px auto 0 auto;
+    width: auto; }
   .vir-options__container--4 .vir-options__container-main-right {
     margin-left: 0; }
   .vir-options__container--5 .vir-options__container-main-right {
@@ -1381,6 +1410,14 @@ body {
       margin-left: 0; }
     .vir-options__container-main-button {
       font-size: 18px; }
+    .vir-options__container-main-row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .vir-options__container-main-premium {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
   .vir-options__container-stand {
     padding-top: 50px; }
     .vir-options__container-stand-item {
@@ -1466,6 +1503,8 @@ body {
   .vir-options__container--3 .vir-options__container-main-img {
     width: 292px;
     height: 167px; }
+  .vir-options__container--3 .vir-options__container-main-item-title {
+    margin-left: 19px; }
   .vir-options__container--4 .vir-options__container-main-img {
     width: 292px;
     height: 167px; }

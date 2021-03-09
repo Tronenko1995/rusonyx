@@ -60,9 +60,6 @@ $(document).ready(function() {
         if (PleskImunify360_checkbox.is(':checked')) {
             total = total + price.PleskImunify360;
         }
-        if (SSLAlphaSSL_checkbox.is(':checked')) {
-            total = total + price.SSLAlphaSSL;
-        }
         if (OptimizationForBitrix_checkbox.is(':checked')) {
             total = total + price.OptimizationForBitrix;
         }
@@ -73,10 +70,19 @@ $(document).ready(function() {
         if (term_selectVal == 24) {
             $(totalPriceSaleBlock).removeClass('hide');
             sale = (total * price.sale24m * term_selectVal);
+            if (SSLAlphaSSL_checkbox.is(':checked')) {
+                sale = sale + (price.SSLAlphaSSL * 2 * price.sale24m);
+            }
             total = (total - (total * price.sale24m)) * term_selectVal;
+            if (SSLAlphaSSL_checkbox.is(':checked')) {
+                total = total + (price.SSLAlphaSSL * 2 - (price.SSLAlphaSSL * 2 * price.sale24m));
+            }
         } else {
             $(totalPriceSaleBlock).addClass('hide');
             total = total * term_selectVal;
+            if (SSLAlphaSSL_checkbox.is(':checked')) {
+                total = total + price.SSLAlphaSSL;
+            }
         }
         console.log(term_selectVal);
 
